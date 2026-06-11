@@ -1,0 +1,81 @@
+{
+  "_instrucciones": "Copia este archivo, renómbralo con el slug del cliente (ej: juan-abogado.json). El slug determina la URL: /juan-abogado",
+  "slug": "nombre-cliente",
+  "theme": "tech",
+  "_temas_disponibles": ["tech", "profesional", "comercial", "salud", "belleza"],
+  "layout": "tech",
+  "_layouts_disponibles": ["tech", "profesional", "comercial", "salud", "belleza"],
+  "profile": {
+    "name": "Nombre Completo",
+    "title": "Cargo o Profesión",
+    "company": "Empresa (opcional)",
+    "avatar": "https://...",
+    "cover": "https://... (imagen de portada, opcional)",
+    "bio": "Descripción breve (opcional)",
+    "certifications": ["Certificación 1", "Certificación 2"],
+    "yearsExperience": 5
+  },
+  "contact": {
+    "phone": "+573001234567",
+    "whatsapp": "+573001234567",
+    "email": "email@ejemplo.com",
+    "address": "Dirección completa",
+    "city": "Ciudad",
+    "schedule": "Lun–Vie 8am–6pm",
+    "mapUrl": "https://maps.google.com/?q=..."
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/...",
+    "instagram": "https://instagram.com/...",
+    "facebook": "https://facebook.com/...",
+    "twitter": "https://twitter.com/...",
+    "github": "https://github.com/...",
+    "tiktok": "https://tiktok.com/@...",
+    "youtube": "https://youtube.com/@...",
+    "website": "https://..."
+  },
+  "services": [
+    {
+      "id": "servicio-1",
+      "name": "Nombre del Servicio",
+      "description": "Descripción breve del servicio.",
+      "icon": "⚡",
+      "price": "Desde $XXX.000 COP",
+      "featured": false
+    }
+  ],
+  "gallery": [
+    {
+      "id": "foto-1",
+      "src": "https://...",
+      "alt": "Descripción de la imagen",
+      "caption": "Pie de foto (opcional)"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "proyecto-1",
+      "title": "Nombre del Proyecto",
+      "description": "Descripción del proyecto.",
+      "image": "https://...",
+      "url": "https://...",
+      "tags": ["Tag 1", "Tag 2"]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Nombre del Cliente",
+      "role": "Cargo o empresa",
+      "text": "Texto del testimonio...",
+      "rating": 5,
+      "avatar": "https://... (opcional)"
+    }
+  ],
+  "seo": {
+    "title": "Nombre — Profesión Ciudad",
+    "description": "Descripción para Google (máx 160 caracteres).",
+    "keywords": ["keyword 1", "keyword 2"],
+    "ogImage": "https://... (imagen para compartir en WhatsApp)"
+  }
+}

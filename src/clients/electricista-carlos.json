@@ -1,0 +1,130 @@
+{
+  "slug": "electricista-carlos",
+  "theme": "comercial",
+  "layout": "comercial",
+  "profile": {
+    "name": "Carlos Ramírez",
+    "title": "Electricista Certificado RETIE",
+    "company": "Electro Ramírez",
+    "avatar": "https://i.pravatar.cc/200?img=57",
+    "cover": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&auto=format&fit=crop",
+    "bio": "Más de 15 años instalando y reparando sistemas eléctricos en Bogotá. Trabajo garantizado y certificado RETIE.",
+    "certifications": ["RETIE Certificado", "ICONTEC NTC 2050", "Trabajo en Alturas"],
+    "yearsExperience": 15
+  },
+  "contact": {
+    "phone": "+573115559876",
+    "whatsapp": "+573115559876",
+    "email": "carlos@electroramirez.co",
+    "address": "Carrera 30 #45-12, Teusaquillo",
+    "city": "Bogotá",
+    "schedule": "Lun–Sáb 7am–7pm · Emergencias 24/7",
+    "mapUrl": "https://maps.google.com/?q=Teusaquillo+Bogota"
+  },
+  "social": {
+    "facebook": "https://facebook.com/electroramirez",
+    "instagram": "https://instagram.com/electroramirez",
+    "tiktok": "https://tiktok.com/@electroramirez",
+    "website": "https://electroramirez.co"
+  },
+  "services": [
+    {
+      "id": "instalaciones",
+      "name": "Instalaciones Eléctricas",
+      "description": "Instalaciones residenciales y comerciales certificadas RETIE.",
+      "icon": "⚡",
+      "price": "Desde $80.000 COP",
+      "featured": true
+    },
+    {
+      "id": "emergencias",
+      "name": "Urgencias 24/7",
+      "description": "Atención inmediata para cortos, apagones y fallas eléctricas.",
+      "icon": "🚨",
+      "price": "Llamar para cotizar",
+      "featured": true
+    },
+    {
+      "id": "tableros",
+      "name": "Tableros Eléctricos",
+      "description": "Instalación y mantenimiento de tableros trifásicos y monofásicos.",
+      "icon": "🔧",
+      "price": "Desde $200.000 COP"
+    },
+    {
+      "id": "iluminacion",
+      "name": "Iluminación LED",
+      "description": "Diseño e instalación de iluminación LED para ahorro energético.",
+      "icon": "💡",
+      "price": "Desde $150.000 COP"
+    },
+    {
+      "id": "redes",
+      "name": "Redes de Voz y Datos",
+      "description": "Cableado estructurado, puntos de red y WiFi empresarial.",
+      "icon": "🌐"
+    },
+    {
+      "id": "mantenimiento",
+      "name": "Mantenimiento Preventivo",
+      "description": "Revisión completa del sistema eléctrico del hogar o local.",
+      "icon": "🔍",
+      "price": "Desde $120.000 COP"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g1",
+      "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&auto=format&fit=crop",
+      "alt": "Tablero eléctrico instalado",
+      "caption": "Tablero trifásico residencial"
+    },
+    {
+      "id": "g2",
+      "src": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&auto=format&fit=crop",
+      "alt": "Instalación eléctrica",
+      "caption": "Instalación certificada RETIE"
+    },
+    {
+      "id": "g3",
+      "src": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&auto=format&fit=crop",
+      "alt": "Iluminación LED",
+      "caption": "Proyecto iluminación LED"
+    },
+    {
+      "id": "g4",
+      "src": "https://images.unsplash.com/photo-1545259742-3e84b486b9e9?w=400&auto=format&fit=crop",
+      "alt": "Trabajo en altura",
+      "caption": "Certificado trabajo en alturas"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Jorge Hernández",
+      "role": "Propietario, Apto 402",
+      "text": "Carlos llegó puntual, resolvió el problema en 30 minutos y dejó todo limpio. Muy profesional.",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "name": "Restaurante El Fogón",
+      "role": "Propietario",
+      "text": "Hizo toda la instalación de nuestro local nuevo. Trabajo certificado y precios justos.",
+      "rating": 5
+    },
+    {
+      "id": "3",
+      "name": "María Salazar",
+      "role": "Conjunto Residencial El Pino",
+      "text": "Atendió una emergencia a las 11pm. Rápido, honesto y de confianza.",
+      "rating": 5
+    }
+  ],
+  "seo": {
+    "title": "Carlos Ramírez — Electricista Certificado RETIE Bogotá",
+    "description": "Electricista certificado RETIE en Bogotá. Instalaciones, urgencias 24/7, tableros y más. 15 años de experiencia.",
+    "keywords": ["electricista bogotá", "electricista certificado retie", "urgencias eléctricas bogotá"],
+    "ogImage": "https://i.pravatar.cc/200?img=57"
+  }
+}

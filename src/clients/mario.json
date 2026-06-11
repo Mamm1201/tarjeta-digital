@@ -1,0 +1,95 @@
+{
+  "slug": "mario",
+  "theme": "tech",
+  "layout": "tech",
+  "profile": {
+    "name": "Mario Marquez",
+    "title": "Desarrollador de Software Full Stack",
+    "company": "Soluciones y Mantenimiento Integrado",
+    "avatar": "https://i.pravatar.cc/200?img=11",
+    "cover": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop",
+    "bio": "Desarrollador de software especializado en aplicaciones web modernas, sistemas empresariales, automatización de procesos e integración de soluciones tecnológicas para empresas.",
+    "certifications": ["Análisis y Desarrollo de Software - SENA"],
+    "yearsExperience": 3
+  },
+  "contact": {
+    "phone": "+573205841112",
+    "whatsapp": "+573205841112",
+    "email": "mmmalejandro01@gmail.com",
+    "city": "Bogotá",
+    "schedule": "Lun–Vie 7am–6pm",
+    "mapUrl": "https://maps.google.com/?q=Bogota+Colombia"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/mario-marquez-985ab519a/",
+    "github": "https://github.com/Mamm1201",
+    "instagram": "https://instagram.com/sizas.dev",
+    "website": "https://www.solucionesymantenimientointegrado.com"
+  },
+  "services": [
+    {
+      "id": "landing",
+      "name": "Landing Pages & Web Apps",
+      "description": "Diseño y desarrollo de páginas web modernas enfocadas en captar clientes y aumentar conversiones.",
+      "icon": "🌐",
+      "featured": true
+    },
+    {
+      "id": "web",
+      "name": "Desarrollo Web Full Stack",
+      "description": "Aplicaciones empresariales a medida para automatizar procesos y mejorar la productividad.",
+      "icon": "📱"
+    },
+    {
+      "id": "api",
+      "name": "Backend & APIs",
+      "description": "Arquitectura de servicios y APIs robustas para integrar sistemas y aplicaciones.",
+      "icon": "⚙️"
+    },
+    {
+      "id": "devops",
+      "name": "DevOps & Cloud",
+      "description": "Despliegue en AWS, GCP, Docker y CI/CD.",
+      "icon": "☁️"
+    },
+    {
+      "id": "consultoria",
+      "name": "Consultoría Tech",
+      "description": "Asesoría en desarrollo de software y transformación digital.",
+      "icon": "💡"
+    },
+    {
+      "id": "iot",
+      "name": "IoT & Embebidos",
+      "description": "Firmware ESP32, integración MQTT y dashboards en tiempo real.",
+      "icon": "🔌"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "chargebox",
+      "title": "ChargeBox — Alquiler de Power Banks IoT",
+      "description": "Sistema completo de alquiler de power banks con estaciones IoT, backend Node.js, pagos Wompi y firmware ESP32.",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop",
+      "url": "https://github.com/mario/chargebox",
+      "tags": ["React", "Node.js", "ESP32", "MQTT", "PostgreSQL"]
+    },
+    {
+      "id": "ecommerce",
+      "title": "Eduney — E-commerce Educativo",
+      "description": "Plataforma para compra, venta e intercambio de artículos educativos reutilizables.",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop",
+      "tags": ["Next.js", "Stripe", "Tailwind"]
+    }
+  ],
+  "seo": {
+    "title": "Mario Marquez — Desarrollador Full Stack Bogotá",
+    "description": "Desarrollo web, apps móviles y backend en Bogotá. React, Node.js, AWS. +3 años de experiencia.",
+    "keywords": [
+      "desarrollador web bogotá",
+      "programador freelance colombia",
+      "react developer"
+    ],
+    "ogImage": "https://i.pravatar.cc/200?img=11"
+  }
+}
