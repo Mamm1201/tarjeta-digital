@@ -6,8 +6,8 @@
     "name": "Mario Marquez",
     "title": "Desarrollador de Software Full Stack",
     "company": "Soluciones y Mantenimiento Integrado",
-    "avatar": "https://i.pravatar.cc/200?img=11",
-    "cover": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop",
+    "avatar": "/clients/mario/avatar.jpeg",
+    "cover": "/clients/mario/cover.jpg",
     "bio": "Desarrollador de software especializado en aplicaciones web modernas, sistemas empresariales, automatización de procesos e integración de soluciones tecnológicas para empresas.",
     "certifications": ["Análisis y Desarrollo de Software - SENA"],
     "yearsExperience": 3
@@ -90,6 +90,6 @@
       "programador freelance colombia",
       "react developer"
     ],
-    "ogImage": "https://i.pravatar.cc/200?img=11"
+    "ogImage": "/clients/mario/avatar.jpeg"
   }
 }
