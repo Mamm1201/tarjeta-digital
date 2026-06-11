@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FiDownload, FiShare2 } from 'react-icons/fi'
+import { FiDownload, FiShare2, FiGrid } from 'react-icons/fi'
 import type { ClientConfig } from '../config/types'
 import { downloadVCF } from '../utils/vcf'
 import { shareProfile } from '../utils/share'
+import { QRModal } from './QRModal'
 
 interface Props {
   config: ClientConfig
@@ -12,6 +13,7 @@ interface Props {
 export function HeroSection({ config }: Props) {
   const { profile } = config
   const [shareMsg, setShareMsg] = useState('')
+  const [showQR, setShowQR] = useState(false)
 
   async function handleShare() {
     const result = await shareProfile(config)
@@ -96,19 +98,26 @@ export function HeroSection({ config }: Props) {
           )}
 
           {/* Action buttons */}
-          <div className="flex gap-3 mt-5">
+          <div className="flex gap-2 mt-5">
             <button
               onClick={() => downloadVCF(config)}
-              className="flex items-center gap-2 px-4 py-2 rounded-card bg-brand-primary text-white text-sm font-medium transition-opacity hover:opacity-90 active:opacity-75"
+              className="flex items-center gap-1.5 px-3 py-2 rounded-card bg-brand-primary text-white text-sm font-medium transition-opacity hover:opacity-90 active:opacity-75"
             >
-              <FiDownload size={16} />
-              Guardar contacto
+              <FiDownload size={15} />
+              Contacto
+            </button>
+            <button
+              onClick={() => setShowQR(true)}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-card bg-brand-surface border border-brand-border text-brand-text text-sm font-medium transition-opacity hover:opacity-90 active:opacity-75"
+            >
+              <FiGrid size={15} />
+              Mi QR
             </button>
             <button
               onClick={handleShare}
-              className="flex items-center gap-2 px-4 py-2 rounded-card bg-brand-surface border border-brand-border text-brand-text text-sm font-medium transition-opacity hover:opacity-90 active:opacity-75"
+              className="flex items-center gap-1.5 px-3 py-2 rounded-card bg-brand-surface border border-brand-border text-brand-text text-sm font-medium transition-opacity hover:opacity-90 active:opacity-75"
             >
-              <FiShare2 size={16} />
+              <FiShare2 size={15} />
               Compartir
             </button>
           </div>
@@ -124,6 +133,8 @@ export function HeroSection({ config }: Props) {
           )}
         </motion.div>
       </div>
+
+      {showQR && <QRModal config={config} onClose={() => setShowQR(false)} />}
     </section>
   )
 }
