@@ -1,8 +1,8 @@
 import { FiSmartphone, FiZap, FiUsers, FiLink } from 'react-icons/fi'
 
 const DEMOS = [
-  { slug: 'mario', label: 'Desarrollador de Software', theme: 'Tech' },
-  { slug: 'electricista-carlos', label: 'Electricista Residencial', theme: 'Comercial' },
+  { slug: 'mario', label: 'Mario Marquez · Full Stack Developer', theme: 'Tech' },
+  { slug: 'electricista-carlos', label: 'Electricista Carlos · Demo', theme: 'Comercial' },
 ]
 
 export function Home() {
@@ -58,8 +58,15 @@ export function Home() {
         </div>
       </div>
 
-      <div className="text-center pb-8 text-gray-700 text-xs">
-        ¿Quieres tu tarjeta digital? Contáctanos.
+      <div className="text-center pb-8">
+        <a
+          href="https://wa.me/573205841112?text=Hola,%20quiero%20mi%20tarjeta%20digital%20profesional"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm text-gray-400 hover:text-green-400 transition-colors"
+        >
+          ¿Quieres tu tarjeta digital? Escríbenos →
+        </a>
       </div>
     </div>
   )

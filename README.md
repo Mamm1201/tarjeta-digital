@@ -8,8 +8,8 @@
 
 | Cliente | URL | Tema |
 |---------|-----|------|
-| Desarrollador de Software | `/mario` | Tech (oscuro) |
-| Electricista RETIE | `/electricista-carlos` | Comercial (cálido) |
+| Mario Marquez — Full Stack Developer | [`/mario`](https://tarjeta-digital-bspl.vercel.app/mario) | Tech (oscuro) |
+| Electricista Carlos — Demo | [`/electricista-carlos`](https://tarjeta-digital-bspl.vercel.app/electricista-carlos) | Comercial (cálido) |
 
 ---
 
