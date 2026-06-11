@@ -95,7 +95,7 @@ export function QRModal({ config, onClose }: Props) {
           </div>
 
           {/* Instrucción */}
-          <p className="text-xs text-gray-400 text-center bg-gray-50 rounded-lg px-3 py-2 w-full">
+          <p className="text-xs text-gray-500 text-center bg-gray-50 rounded-lg px-3 py-2 w-full">
             📱 Apunta la cámara del teléfono para abrir la tarjeta
           </p>
         </div>
