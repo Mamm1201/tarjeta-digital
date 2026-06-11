@@ -11,7 +11,10 @@ interface Props {
 
 export function QRModal({ config, onClose }: Props) {
   const qrRef = useRef<HTMLDivElement>(null)
-  const url = `${window.location.origin}/${config.slug}`
+  // VITE_BASE_URL fija el dominio de producción → el QR siempre apunta al sitio real
+  // aunque lo generes desde una URL de preview o local
+  const base = (import.meta.env.VITE_BASE_URL as string | undefined)?.replace(/\/$/, '') ?? window.location.origin
+  const url = `${base}/${config.slug}`
 
   async function downloadQR() {
     const svgEl = qrRef.current?.querySelector('svg')
