@@ -1,5 +1,5 @@
-import { useRef } from 'react'
 import QRCode from 'react-qr-code'
+import QRCodeLib from 'qrcode'
 import { FiX, FiDownload, FiShare2 } from 'react-icons/fi'
 import type { ClientConfig } from '../config/types'
 import { shareProfile } from '../utils/share'
@@ -10,44 +10,27 @@ interface Props {
 }
 
 export function QRModal({ config, onClose }: Props) {
-  const qrRef = useRef<HTMLDivElement>(null)
-  // VITE_BASE_URL fija el dominio de producción → el QR siempre apunta al sitio real
-  // aunque lo generes desde una URL de preview o local
   const base = (import.meta.env.VITE_BASE_URL as string | undefined)?.replace(/\/$/, '') ?? window.location.origin
   const url = `${base}/${config.slug}`
 
   async function downloadQR() {
-    const svgEl = qrRef.current?.querySelector('svg')
-    if (!svgEl) return
-
-    const serializer = new XMLSerializer()
-    const svgStr = serializer.serializeToString(svgEl)
-    const blob = new Blob([svgStr], { type: 'image/svg+xml' })
-    const svgUrl = URL.createObjectURL(blob)
-
-    // 512px = buena calidad para impresión en tarjeta física
-    const size = 512
-    const canvas = document.createElement('canvas')
-    canvas.width = size
-    canvas.height = size
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
-
-    ctx.fillStyle = '#ffffff'
-    ctx.fillRect(0, 0, size, size)
-
-    const img = new Image()
-    img.onload = () => {
-      ctx.drawImage(img, 0, 0, size, size)
-      URL.revokeObjectURL(svgUrl)
+    try {
+      // qrcode genera PNG nativo con quiet zone correcto → compatible con todos los escáneres
+      const dataUrl = await QRCodeLib.toDataURL(url, {
+        width: 400,
+        margin: 4,
+        color: { dark: '#000000', light: '#ffffff' },
+        errorCorrectionLevel: 'M',
+      })
       const link = document.createElement('a')
       link.download = `qr-${config.slug}.png`
-      link.href = canvas.toDataURL('image/png')
+      link.href = dataUrl
       document.body.appendChild(link)
       link.click()
       document.body.removeChild(link)
+    } catch {
+      // noop
     }
-    img.src = svgUrl
   }
 
   return (
@@ -78,7 +61,6 @@ export function QRModal({ config, onClose }: Props) {
         {/* QR Code */}
         <div className="flex flex-col items-center px-8 py-6 gap-4">
           <div
-            ref={qrRef}
             className="p-4 rounded-xl border-2 border-gray-100 bg-white"
           >
             <QRCode
