@@ -41,7 +41,7 @@ const STEPS = [
     icon: <FiRefreshCw size={24} />,
     step: "3",
     title: "Pagas y recibes tu tarjeta",
-    desc: "Nequi o Bancolombia. La tarjeta NFC llega a tu puerta en 2–3 días.",
+    desc: "Pago por Nequi o Bre-B al 3205841112. La tarjeta NFC llega a tu puerta en 2–3 días.",
   },
 ];
 
