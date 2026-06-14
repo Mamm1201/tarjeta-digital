@@ -183,15 +183,32 @@ Simplemente repetir el proceso de escritura con la nueva URL. NTAG213 permite ha
 
 ---
 
+## Historial de Avances
+
+### Semana del 2026-06-13
+
+**Completado:**
+- [x] Home reescrita como página de ventas — precio visible, proceso de 3 pasos y garantía
+- [x] Banner demo agregado al final del perfil: "Esta es una demo — ¿quieres la tuya?"
+- [x] Medios de pago actualizados: Nequi y Bre-B al 3205841112
+- [x] Plan Premium incluye 1 actualización gratis en el primer mes
+- [x] Formulario de onboarding activo (Google Forms)
+- [x] Playbook de respuestas rápidas para WhatsApp elaborado (11 mensajes, flujo completo)
+
+**Pendiente esta semana:**
+- [ ] Conseguir 3 clientes piloto (gratis/descuento a cambio de video y testimonio) — programado para 2026-06-14
+- [ ] Grabar video de 30s del NFC funcionando en celular real — para publicar en redes
+
+---
+
 ## Pendientes
 
 ### Desarrollo
 
 - [ ] Crear más layouts (actualmente: Comercial, Profesional, Tech, Salud, Belleza)
-- [ ] Definir dominio de producción (actualmente ejemplo genérico)
+- [ ] Definir dominio de producción definitivo (actualmente en Vercel)
 - [ ] Sistema de onboarding para clientes nuevos (formulario → genera JSON automáticamente)
 - [ ] Panel de administración para editar perfiles sin tocar el JSON
-- [ ] Soporte para múltiples idiomas
 - [ ] Analytics por tarjeta (cuántas veces se escaneó la NFC)
 
 ### Negocio / Comercial
@@ -199,16 +216,24 @@ Simplemente repetir el proceso de escritura con la nueva URL. NTAG213 permite ha
 - [ ] Conseguir primer lote de tarjetas NTAG213 CR80 (mínimo 50 unidades)
 - [ ] Definir proveedor de impresión para tarjetas personalizadas
 - [ ] Crear catálogo de diseños de tarjeta (plantillas visuales)
-- [ ] Definir dominio definitivo de producción
-- [ ] Crear proceso de onboarding documentado para clientes
-- [ ] Definir política de suscripción / mantenimiento anual
-- [ ] Primeros 3 clientes piloto (precio reducido a cambio de testimonial)
+- [ ] Definir política de actualizaciones (actualmente: $30.000 c/u después del primer mes)
 
 ### Contenido / Marketing
 
-- [ ] Crear video demo: "tap → perfil se abre en el teléfono"
-- [ ] Definir segmentos objetivo prioritarios (¿electricistas, médicos, estilistas?)
-- [ ] Armar propuesta de valor en una página para mostrar a clientes
+- [ ] Grabar video demo: "tap → perfil se abre en el teléfono" (30 segundos)
+- [ ] Publicar video en redes sociales
+- [ ] Recolectar testimonios de los 3 clientes piloto
+
+---
+
+## Recursos Clave
+
+| Recurso | Link |
+|---|---|
+| Formulario de onboarding | https://docs.google.com/forms/d/e/1FAIpQLSev2PQKr58FtSWR3lDhF0PDHbtFeNDo5Evse-x-ZsTCwVzR-Q/viewform |
+| WhatsApp de contacto | https://wa.me/573205841112 |
+| Demo Mario | /mario |
+| Demo electricista | /electricista-carlos |
 
 ---
 
@@ -216,7 +241,183 @@ Simplemente repetir el proceso de escritura con la nueva URL. NTAG213 permite ha
 
 | Slug | Nombre | Layout | Estado |
 |---|---|---|---|
+| mario | Mario Márquez | Tech | Demo propio |
 | electricista-carlos | Carlos Ramírez | Comercial | Demo/ejemplo |
+
+---
+
+## Playbook de Respuestas Rápidas — WhatsApp
+
+> Guardar cada mensaje en WhatsApp Business con el atajo indicado.
+> Reemplazar `[URL]` con la URL de producción del sitio.
+
+### Guía de uso
+
+| Situación | Atajo |
+|---|---|
+| Primer mensaje entrante | `/bienvenida` |
+| Preguntan qué incluye | `/queincluye` |
+| Preguntan precio | `/planes` |
+| Preguntan por el chip NFC | `/comofunciona-nfc` |
+| Dudan antes de pagar | `/sinriesgo` |
+| Quieren proceder | `/proceder` |
+| Llenaron el formulario | `/confirmaformulario` |
+| Enviar tarjeta terminada | `/preview` |
+| Aprueban y preguntan cómo pagar | `/cierre` |
+| Recibir comprobante de pago | `/confirmapago` |
+| Sin respuesta 48h tras el preview | `/seguimiento` |
+
+---
+
+### ETAPA 1 — PRIMER CONTACTO
+
+**`/bienvenida`**
+```
+¡Hola! 👋 Soy Mario, gracias por escribir.
+
+Te cuento rápido: creo tarjetas digitales profesionales con chip NFC — tu cliente acerca el celular y en 1 segundo abre tu perfil, tus servicios y tu WhatsApp. Sin apps, sin papel.
+
+Acá puedes ver cómo quedan y los planes con precio:
+👉 [URL]
+
+Si tienes dudas o quieres que hagamos la tuya, aquí estoy.
+```
+
+---
+
+### ETAPA 2 — MANEJO DE DUDAS
+
+**`/queincluye`**
+```
+El proceso es simple:
+
+1️⃣ Llenas un formulario con tus datos (5 min)
+2️⃣ En menos de 24h te mando el link de tu tarjeta para que la veas funcionando en tu celular
+3️⃣ Si te gusta, pagas — si hay algo que cambiar, lo ajustamos sin costo
+
+Puedes ver ejemplos reales acá 👇
+👉 [URL]/#planes
+
+¿Quieres que te cuente qué plan se ajusta más a lo que necesitas?
+```
+
+**`/planes`**
+```
+Manejamos tres planes, todos con pago único (sin mensualidades):
+
+🔹 *Básico — $50.000*
+Perfil digital + QR + link permanente. Ideal si ya tienes cómo compartirlo.
+
+🔵 *Profesional — $80.000* ⭐ (el más pedido)
+Todo lo anterior + tarjeta NFC física programada. Tu cliente la toca con el celular y abre tu perfil al instante.
+
+🔷 *Premium — $130.000*
+Perfil completo con galería, portafolio, testimonios y diseño personalizado. Con tarjeta NFC.
+
+¿Cuál se acerca más a lo que buscas?
+```
+
+**`/comofunciona-nfc`**
+```
+El chip NFC es la misma tecnología que usa tu tarjeta débito para pagar sin contacto.
+
+Funciona así:
+📱 Tu cliente saca el celular → lo acerca a la tarjeta → en 1 segundo abre tu perfil con tu WhatsApp, tus servicios, fotos y todo.
+
+No necesita descargar ninguna app. Funciona en iPhone y en Android modernos (últimos 6 años).
+
+Acá hay un ejemplo para que veas cómo queda:
+👉 [URL]/electricista-carlos
+```
+
+**`/sinriesgo`**
+```
+Entiendo la duda, y por eso trabajo diferente:
+
+✅ Primero hago tu tarjeta
+✅ Te la mando para que la veas funcionando en tu celular
+✅ Solo pagas cuando estés 100% conforme
+
+Si no te gusta algo, lo cambiamos sin costo. Y si definitivamente no quieres seguir, no pagas nada.
+
+Sin riesgo para ti.
+```
+
+---
+
+### ETAPA 3 — CIERRE Y PROCESO
+
+**`/proceder`**
+```
+¡Perfecto! Solo necesito que llenes este formulario con tus datos — te toma menos de 5 minutos:
+
+📋 https://docs.google.com/forms/d/e/1FAIpQLSev2PQKr58FtSWR3lDhF0PDHbtFeNDo5Evse-x-ZsTCwVzR-Q/viewform
+
+Una vez que lo envíes, en menos de 24h te mando el link de tu tarjeta para que la veas. Ahí decides si pagas.
+
+Cualquier duda mientras lo llenas, escríbeme.
+```
+
+**`/confirmaformulario`**
+```
+¡Listo, recibí tu formulario! ✅
+
+Ya empiezo a trabajar en tu tarjeta. En menos de 24 horas te mando el link para que la veas funcionando en tu celular — revisamos juntos que todo esté perfecto antes de que pagues.
+
+Te aviso por acá.
+```
+
+---
+
+### ETAPA 4 — ENVÍO DE PREVIEW
+
+**`/preview`**
+```
+¡Lista tu tarjeta! 🎉
+
+Ábrela desde tu celular para que veas cómo se ve:
+👉 [LINK DE LA TARJETA DEL CLIENTE]
+
+Revísala completa — contacto, servicios, todo. Si algo necesita ajuste (texto, foto, colores), me dices y lo corrijo.
+
+Cuando estés conforme, me avisas y te explico cómo pagar.
+```
+
+**`/cierre`**
+```
+¡Perfecto! Me alegra que haya quedado exactamente como querías.
+
+El pago es por:
+
+💚 *Nequi:* 3205841112
+🔵 *Bre-B:* 3205841112
+
+Una vez confirme el pago te programo la tarjeta NFC y sale a envío. En 2–3 días hábiles llega a tu puerta.
+
+Cuando hagas el pago me mandas el comprobante por acá.
+```
+
+---
+
+### ETAPA 5 — POST-VENTA
+
+**`/confirmapago`**
+```
+¡Pago confirmado! ✅ Muchas gracias.
+
+Ya queda en producción tu tarjeta NFC. En 2–3 días hábiles te llega a tu dirección.
+
+Te voy a estar informando del estado del envío.
+
+Y cuando la recibas y la veas funcionando... ¿me harías el favor de grabar un videíto de 10 segundos mostrándola? Me ayuda un montón para que más personas la conozcan. 🙏
+```
+
+**`/seguimiento`** *(máximo una vez, no insistir)*
+```
+Hola [nombre], ¿pudiste revisar tu tarjeta?
+
+Quería saber si tienes algún ajuste o si quedó bien. Estoy disponible para lo que necesites.
+```
 
 ---
 
