@@ -2,6 +2,7 @@
   "slug": "electricista-carlos",
   "theme": "comercial",
   "layout": "comercial",
+  "isDemo": true,
   "profile": {
     "name": "Carlos Ramírez",
     "title": "Electricista Certificado RETIE",

@@ -71,6 +71,7 @@ export interface ClientConfig {
   slug: string
   theme: ThemeId
   layout: LayoutId
+  isDemo?: boolean
   profile: Profile
   contact: Contact
   social: Social

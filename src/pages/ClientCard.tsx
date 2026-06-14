@@ -6,6 +6,7 @@ import { useTheme } from '../hooks/useTheme'
 import { useSEO } from '../hooks/useSEO'
 import { LoadingScreen } from '../components/LoadingScreen'
 import { ContactButtons } from '../components/ContactButtons'
+import { DemoBanner } from '../components/DemoBanner'
 import { NotFound } from './NotFound'
 import { TechLayout } from '../layouts/TechLayout'
 import { ProfesionalLayout } from '../layouts/ProfesionalLayout'
@@ -35,6 +36,7 @@ export function ClientCard() {
 
   return (
     <div style={themeVars as React.CSSProperties}>
+      {config.isDemo && <DemoBanner />}
       <Layout config={config} />
       <ContactButtons contact={config.contact} />
     </div>
