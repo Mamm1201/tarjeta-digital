@@ -84,6 +84,7 @@ const PLANS = [
       "Sección de testimonios",
       "Diseño y colores personalizados",
       "Envío a toda Colombia",
+      "1 actualización gratis en el primer mes",
     ],
     cta: "Pedir plan Premium",
     featured: false,
@@ -231,6 +232,15 @@ export function Home() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Nota pago único */}
+      <div className="px-5 pb-8 max-w-lg mx-auto">
+        <p className="text-center text-xs text-gray-500 leading-relaxed">
+          Pago único — sin suscripción ni cobros mensuales.
+          <br />
+          Actualizaciones futuras del perfil: <span className="text-gray-400">$30.000 c/u</span>.
+        </p>
       </div>
 
       {/* Garantía */}
